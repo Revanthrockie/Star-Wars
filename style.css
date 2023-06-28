@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /* ========= header ========== */
@@ -61,7 +62,9 @@ body{
     border-radius: 5px;
     font-size: 16px;
     display: inline-block;
-    padding: 2px 30px;
+    padding: 15px 30px;
+    max-width: max-content;
+    text-transform:uppercase;
 }
   .image-h-tag{
     width: 400px;
@@ -69,6 +72,29 @@ body{
     object-fit: cover;
     object-position: center;
  }
+
+
+/* ============ content ============ */
+
+
+
+
+
+
+
+
+ /* =============footer =========== */
+ .footer{
+    background-color: #1F2937;
+    margin-bottom: 0px;
+ }
+ .footer-txt{
+    color:white;
+    text-align: center;
+    padding: 30px 0px;
+    text-transform: capitalize;
+    font-family: "Hero";
+}
 
 
 
