@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -68,19 +69,20 @@ img{
 
 .left-h button{
     cursor:pointer;
-    background-color: deepskyblue;
+    background-color: #3882f6;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     display: inline-block;
     padding: 15px 30px;
     max-width: max-content;
-    text-transform:uppercase;
+    text-transform:capitalize;
 }
   .image-h-tag{
     width: 400px;
     height: 300px;
-    max-width: 300px;
+    /* max-width: 300px; */
     object-fit: cover;
     object-position: center;
  }
@@ -94,10 +96,17 @@ li > img{
     object-fit: cover;
     object-position: center;
 }
+
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .title{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding: 30px 0px;
 }
 
 .boxes{
@@ -115,6 +124,51 @@ li > img{
 }
 .text{
     color: grey;
+}
+
+/* ---------- quote -------- */
+.quotes{
+    background-color: #E5E7EB;
+    font-style: italic;
+    font-size: 24px;
+    color: #06060662;
+    font-weight: lighter;
+    padding: 150px 300px;
+    margin: 100px 0px;;
+}
+
+.quotes div{
+    color: rgba(0, 0, 0, 0.601);
+    text-align: right;
+}
+
+/* ---------- newsletter --------- */
+.news{
+    background-color: #3882f6;
+    margin: 100px 200px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around; 
+}
+.news .N-txt {
+    color: whitesmoke
+}
+
+.news .btn{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    background-color: #3882f6;
+    border: 2px solid white;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
 }
 
 
