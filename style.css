@@ -6,27 +6,23 @@
 body{
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
-img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* ========= header ========== */
-.header{
-    margin: 0px;
-    background-color: #1F2937;
-    padding: 10px 150px 80px 150px;
-}
+/* ========= navbar ========== */
 
 .navbar{
     color: white;
-    display: flex;  
+    display: flex;
     background-color: #1F2937;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+    position: sticky;
+    width: 100%;
+    padding: 20px 150px;
+    z-index: 9;
+    /* mix-blend-mode: difference; */
 }
 
 .navbar li{
@@ -44,48 +40,38 @@ img{
     justify-content: flex-end;
     gap: 20px;
 }
+
+/* ========= header ========== */
+.header{
+    margin: 0px;
+    background-color: #1F2937;
+    padding: 10px 150px 80px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    background-image: url("./hero-img/image_1921b77b.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height : 100vh;
+
+}
+
  /* header-content */
- .header-content{
-    display: flex;
-    gap: 100px;
-    align-items: flex-end;
- }
-.left-h{
-    display: flex;
-    flex-flow: column wrap;
-    /* flex-basis: 300px; */
-    gap: 30px;
-}
- .left-h .text-head{
+
+
+ h1 {
     font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
- }
-
-.left-h .text-head-2{
-    font-size: 18px;
     color: #E5E7EB;
+    font-weight: bolder;
+    margin: 0px;
  }
-
-.left-h button{
-    cursor:pointer;
-    background-color: #3882f6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    display: inline-block;
-    padding: 15px 30px;
-    max-width: max-content;
-    text-transform:capitalize;
+ 
+.header-content{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
 }
-  .image-h-tag{
-    width: 400px;
-    height: 300px;
-    /* max-width: 300px; */
-    object-fit: cover;
-    object-position: center;
- }
 
 
 /* ============ content ============ */
