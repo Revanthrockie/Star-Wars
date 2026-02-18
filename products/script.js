@@ -1,18 +1,24 @@
-let cartCount = 0;
+const reveals = document.querySelectorAll(".reveal");
 
-const buttons = document.querySelectorAll(".cart-btn");
-const cartDisplay = document.getElementById("cart-count");
+function revealOnScroll(){
+    for(let i = 0; i < reveals.length; i++){
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        cartCount++;
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealBottom = reveals[i].getBoundingClientRect().bottom;
 
-        // update cart number on page (if span exists)
-        if (cartDisplay) {
-            cartDisplay.textContent = cartCount;
+        let revealPoint = 120;
+
+        
+        if(revealTop < windowHeight - revealPoint && revealBottom > 0){
+            reveals[i].classList.add("active");
+        } 
+        
+        else{
+            reveals[i].classList.remove("active");
         }
+    }
+}
 
-        // alert message
-        alert("Item added to cart 🛒");
-    });
-});
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
