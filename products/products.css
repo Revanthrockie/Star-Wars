@@ -1,4 +1,14 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 @font-face {
     font-family: StarJedi;
     src: url('./fonts/Starjedi.ttf') format('truetype');
@@ -12,14 +22,23 @@
 }
 
 
+body {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: #000000;
+    margin: 0;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     letter-spacing: 1px;
+    background: url('./assets/background1.png') repeat;
+    background-size: 500px;   
+    background-repeat: repeat;
+    background-attachment: scroll;
 }
+
+
 
 h1{
     font-family: 'StarJedi';
