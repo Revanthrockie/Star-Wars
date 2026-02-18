@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Pirata+One&display=swap" rel="stylesheet">
+    <title>Star War</title>
+    <style>
+        *{
+            font-family: "Orbitron", sans-serif;
+        }
+        body{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.399);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Orbitron", sans-serif;
+            background-image: url(/images/background.png);
+        }
+        .login{
+            width: 1000px;
+            height: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.658);
+            display: flex;
+            border-radius: 24px;
+        }
+        .left-side{
+            width: 50%;
+            height: 100%;
+            display: flex;
+
+        }
+        .image-left{
+            /* background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: left;
+            align-items: center; */
+            display: flex;
+            background-color: black;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
+            /* border-radius: 24px; */
+        }
+        .right-side{
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            padding: 0px 30px;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+        img{
+            width: 100%;
+            /* height:; */
+            align-items: center;
+            justify-content: center;
+            object-fit: scale-down;
+        }
+
+        .right-side h1{
+            font-size: 48px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input{
+            padding: 15px 30px;
+            width: 80%;
+            border: none;
+            outline: none !important;
+            box-shadow: none !important;
+            font-size: 20px;
+        }
+
+        fieldset{
+            border: 2px solid black;
+            border-radius: 9px;
+            margin-bottom: 20px;
+        }
+
+        legend{
+            font-size: 18px;
+        }
+
+        h5{
+            color: black;
+            font-size: 15px;
+            text-align: right;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .submit{
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit button{
+            width: 125px;
+            height: 48px;
+            background-color: rgba(255, 255, 0, 0.815);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: "Orbitron", sans-serif;
+        }
+        #reg{
+            color: black;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 200;
+        }
+
+        #reg a{
+            color: black;
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <div class="left-side">
+            <div class="image-left">
+                <img src="images/image.png" alt="">
+            </div>
+        </div>
+        <div class="right-side">
+            <h1>Sign Up</h1>
+            <form action="" id="registerForm">
+                <fieldset>
+                    <legend>Email ID</legend>
+                    <input type="text" name="email" id="email" placeholder="example@gamil.com" required>
+                </fieldset>
+                
+                
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" name="pass" id="password" placeholder="********************" required>
+                </fieldset>
+                
+                
+                <fieldset>
+                    <legend>Confirm Password</legend>
+                    <input type="password" name="cpass" id="confirmPassword" placeholder="********************" required>
+                </fieldset>
+
+
+                <div class="submit" id="sub">
+                    <button type="submit">Register</button>
+                </div>
+
+                <h5 id="reg">Do you already have an account ? <a href="./login.html">Login</a></h5>
+            </form>
+        </div>
+    </div>
+    <script>
+        localStorage.setItem("key", "value");
+        localStorage.getItem("key");
+        
+        const registerForm = document.getElementById("registerForm");
+        registerForm.addEventListener("submit", function(e) {
+
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if(password !== confirmPassword) {
+                alert("Passwords do not match!");
+            return;
+            }
+
+            const user = {
+                email: email,
+                password: password
+            };
+
+            localStorage.setItem("user", JSON.stringify(user));
+
+            alert("Registered Successfully!");
+            window.location.href = "login.html";
+        })
+    </script>
+</body>
+</html>
