@@ -5,6 +5,50 @@ body {
     text-align: center;
 }
 
+/* ========= navbar ========== */
+
+.navbar{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    /* background-color: #1F2937; */
+    justify-content: space-between;
+    /* margin-bottom: 0px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navbar h1{
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+/*======== container ========== */
+
 .products-container {
     display: flex;
     justify-content: center;
