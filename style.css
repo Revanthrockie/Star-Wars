@@ -15,14 +15,17 @@ body{
 .navbar{
     color: white;
     display: flex;
-    background-color: #1F2937;
+    flex-direction: row;
+    align-items: first baseline;
+    /* background-color: #1F2937; */
     justify-content: space-between;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     position: sticky;
+    top: 0;
     width: 100%;
-    padding: 20px 150px;
+    /* padding: 20px; */
     z-index: 9;
-    /* mix-blend-mode: difference; */
+    mix-blend-mode: difference;
 }
 
 .navbar li{
@@ -41,11 +44,18 @@ body{
     gap: 20px;
 }
 
+.navbar h1{
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+    margin: 0px;
+}
+
 /* ========= header ========== */
 .header{
     margin: 0px;
     background-color: #1F2937;
-    padding: 10px 150px 80px 150px;
+    /* padding: 10px 150px 80px 150px; */
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -95,18 +105,26 @@ body{
 
 /* ============ content ============ */
 
+section{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+
 .Section-1{
     display: flex;
     flex-direction: column;
+    height: fit-content;
     gap: 50px;
-    padding: 100px 150px;
+    padding: 100px 15px;
     /* width: fit-content; */
-    height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 
 .Section-1 h1{
-    font-size: 120px;
+    font-size: 100px;
     color: #1F2937;
     font-weight: bolder;
     margin: 0px;
@@ -120,13 +138,13 @@ body{
     /* grid-auto-rows: 200px; */
     width: 100%;
     padding: 20px;
-    gap: 20px;
-    height: 100%;
-
+    gap: 10px;
+    height: 900px;
+    /* border-radius: 15px; */
 }
 
 .item{
-    border-radius: 30px;
+    border-radius: 15px;
     height: 100%;
     width: 100%;
     overflow: hidden;
