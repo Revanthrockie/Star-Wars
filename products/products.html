@@ -1,43 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Merch</title>
-    <link rel="stylesheet" href="products.css">
-</head>
-<body>
-    <nav class="navbar">
-            <h1>MERCH</h1>
-             <ul>
-                <li><a href="./products/products.html">Products</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-    </nav>
-    <main class="main-container">
-        <section class="hero-section">
-            <div class="Title">Welcome to the Star Wars Merch Store!</div>
-            <div class="Subtitle">Find the coolest Star Wars merchandise here. From lightsabers to helmets, we have it all. May the force be with you while shopping!</div>
+    <main>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Star Wars Merch</title>
+            <link rel="stylesheet" href="products.css">
+            <link rel="stylesheet" href="/footer.css">
+
+        </head>
+
+    <!-- <div class="cart-bar">
+        🛒 Cart: <span id="cart-count">0</span>
+    </div> -->
+
+
+        <body>
+            <!--  ===== start of nav===== -->
+            <nav class="navbar">
+                <h1><a href="/index.html">MERCH</a></h1>
+                <ul>
+                    <li><a href="./products/products.html">Products</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <!--  ===== end of nav bar ===== -->
+            <div class="main-container">
+                <div class = "title">
+                    <h1>MERCHANDiSE</h1>
+                    <h2>Merch from a Galaxy Far, Far Away</h2>
+                </div>
+
+                <!-- CATEGORY SCROLL -->
+            <section class="category-section reveal">
+
+                <h2 class="section-title">Shop by Category</h2>
+
+                <div class="category-scroll">
+
+                    <div class="category-card">
+                        <div class="cat-img">
+                            <img src="assets/1.png">
+                        </div>   
+                        <p class="cat-title">Hoodies</p>
+                        <span class="cat-desc">To keep you warm</span>
+
+                    </div>
+
+                    <div class="category-card">
+                        <div class="cat-img">
+                            <img src="assets/f1.jpg">
+                        </div>
+                        <p class="cat-title">Figures</p>
+                        <span class="cat-desc">To keep you in action</span>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="cat-img">
+                            <img src="assets/L1.jpg">
+                        </div>
+                        <p class="cat-title">Lightsabers</p>
+                        <span class="cat-desc">To keep you in the fight</span>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="cat-img">
+                            <img src="assets/p1.png">
+                        </div>
+                        <p class="cat-title">Posters</p>
+                        <span class="cat-desc">To keep you inspired</span>
+                    </div>
+
+                </div>
         </section>
 
-        <div class="product-card">
-            <img src="assets/lightsaber.jpg" alt="Lightsaber">
-            <h3>Jedi Lightsaber</h3>
-            <p>₹2499</p>
-            <button class="cart-btn">Add to Cart</button>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="product-section reveal">
+        <section id="sabers-section">
+            <h2 class="section-title">Featured Merch</h2>
+
+            <div class="product-scroll">
+
+                <div class="product-card">
+                    <img src="assets/jedi.png">
+                    <h3>Jedi Hoodie</h3>
+                    <p class="price">₹1999</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/3.png">
+                    <h3>Sith Sweatshirt</h3>
+                    <p class="price">₹2499</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/a2.jpg">
+                    <h3>Action Figure</h3>
+                    <p class="price">₹1499</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/l2.jpg">
+                    <h3>Lightsaber Toy</h3>
+                    <p class="price">₹2999</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+            </div>
+        </section>
+        </section>
+
+
+        <!-- HOODIES ROW -->
+        <section class="product-section reveal">
+        <section id="hoodies-section">    
+            <h2 class="section-title">Hoodies</h2>
+
+            <div class="product-scroll">
+
+                <div class="product-card">
+                    <img src="assets/2.png">
+                    <h3>Jedi Hoodie</h3>
+                    <p class="price">₹1999</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/emp.png">
+                    <h3>Empire Hoodie</h3>
+                    <p class="price">₹2199</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/dark.png">
+                    <h3>Dark Side Hoodie</h3>
+                    <p class="price">₹2399</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/darth.png">
+                    <h3>Darth Vader Hoodie</h3>
+                    <p class="price">₹2399</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+            </div>
+        </section>
+        </section>
+
+        <!-- ACTION FIGURES -->
+        <section class="product-section reveal">
+        <section id="figures-section">
+            <h2 class="section-title">Action Figures</h2>
+
+            <div class="product-scroll">
+
+                <div class="product-card">
+                    <img src="assets/f1.jpg">
+                    <h3>Darth Vader</h3>
+                    <p class="price">₹1499</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/a5.png">
+                    <h3>Luke Skywalker</h3>
+                    <p class="price">₹1499</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/a3.jpg">
+                    <h3>Yoda</h3>
+                    <p class="price">₹1299</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/a4.jpg">
+                    <h3>Jedi</h3>
+                    <p class="price">₹1299</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+            </div>
+        </section>
+        </section>
+
+        <!-- CUSTOMER REVIEWS -->
+        <section class="review-section reveal">
+            <h2 class="section-title">What Our Customers Say</h2>
+
+            <div class="review-container">
+
+                <div class="review-card">
+                    <p>"The hoodie quality is insane. Feels like Jedi-approved fabric."</p>
+                    <span>- Arjun S.</span>
+                </div>
+
+                <div class="review-card">
+                    <p>"Lightsaber toy is super detailed. My son loved it."</p>
+                    <span>- Meera K.</span>
+                </div>
+
+                <div class="review-card">
+                    <p>"Fast delivery and premium packaging. Definitely ordering again."</p>
+                    <span>- Rahul P.</span>
+                </div>
+
+            </div>
+        </section>
+
+
         </div>
 
-        <div class="product-card">
-            <img src="assets/helmet.jpg" alt="Darth Vader Helmet">
-            <h3>Darth Vader Helmet</h3>
-            <p>₹3999</p>
-            <button class="cart-btn">Add to Cart</button>
+        <!-- PRODUCT MODAL -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+
+                <span class="close-btn">&times;</span>
+
+                <img id="modal-img" src="">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+
+                <button class="buy-btn modal-buy">Buy Now</button>
+
+            </div>
         </div>
+        <div id="footer"></div>
+        <script>
+            fetch("../footer.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("footer").innerHTML = data;
+            });
+        </script>
+
+        <script src="script.js"></script>
+        </div>
+        </body>
     </main>
-
-</div>
-
-<script src="script.js"></script>
-</body>
 </html>
